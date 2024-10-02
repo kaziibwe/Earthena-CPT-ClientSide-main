@@ -1,0 +1,106 @@
+/* ...............................the login page............................... */
+.LoginNav{
+  border-bottom: #dddcdc 1px solid;
+}
+.headinglogin{
+  font-size: 30px;
+  font-weight: 6;
+  margin: 0;
+  border-bottom: #dddcdc 1px solid;
+}
+.logininput{
+  
+  border-bottom:#3b3b3b 1px solid;
+  width: 100%;
+  background: #f4f4f4;
+  height: 50px;
+}
+.lable{
+  font-size: 10px;
+}
+.Allowlogin{
+  background-color: #0f62fe;
+  padding: 2px;
+}
+.logingbtn{
+  background-color: #0f62fe;
+  border:#ffff 1px solid;
+}
+.loginbtn:hover{
+  cursor: pointer;
+  border:#ffff 1px solid;
+}
+.checkbox {
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-bottom: #dddcdc 1px solid;
+}
+.dont{
+  color: #0f62fe;
+  border: white 2px solid;
+  background: #0f62fe;
+  color:white
+}
+
+.loginlink{
+  color: #0f62fe;
+  padding: 0; 
+  
+}
+.loginfooterlinks{
+  color:white;
+  text-decoration: none; 
+  padding:2px;
+  
+}
+.loginfooterlinks:hover{
+  background: #161616;
+}
+.loginfooterwrap{
+  border-bottom: #e0e0e0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  justify-content: left;
+  font-size: 14px;
+}
+.loginlink:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footerlogin{
+  width: 100vw;
+  height: auto;
+  left: 0;
+  background-color: #161616;
+  margin: 0%;
+}
+
+/* ................the login..................... */
+.footerlogin{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+  height: 50px;
+}
+.loginfooterwrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 60%;
+} 
+.loginfooterlinks {
+  padding: 0;
+  margin: 0;
+}
+
+
+@media screen and (min-width:1124px) {
+  /* .................the login .........................*/
+  
+  /* ....................the signup ..............................*/
+  
+  
+  .departments{
+    grid-template-columns:25% 25% 25% 25%;  
+  }
+}

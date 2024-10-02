@@ -1,0 +1,60 @@
+@media screen   and (min-width:768px) {
+    .main{
+        display: grid;
+        grid-template-columns: 20% auto;
+    }
+}
+
+
+#recommends>div:hover{
+    cursor: pointer;
+    background-color: #bebebe;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.drilloxAnim{
+
+    width: 200;
+    height: 100;
+    background-color: green;
+
+    animation-name: recommendations;
+    animation-duration: 2s;
+}
+
+
+.drilloxHide{
+    animation-name: drilloxHideOut;
+    animation-duration: 100ms;
+}
+
+
+.drilloxShow{
+    animation-name: drilloxHideShow;
+    animation-duration: 5s;
+}
+
+
+@keyframes drilloxHideOut {
+    from { width: 300px; opacity: 1; }
+  to { width: 0px; opacity: 0;}
+}
+
+
+@keyframes drilloxHideShow {
+    from { width: 0px; opacity: 0;}
+  to { width: 300px; opacity: 1;}
+}
+
+
+@keyframes recommendations {
+
+    from {opacity: 0; border-radius: 15px; transform: scale(0.8);}
+  to {opacity: 1; border-radius: 0; transform: scale(1.01);}
+
+}

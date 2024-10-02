@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p#outputString {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot</h1>
+        <label for="inputString">Enter a message:</label>
+        <input type="text" id="inputString">
+        <button id="sendButton" onclick="sendMessage()">Send</button>
+        <br>
+        <label for="outputString">Chatbot Response:</label>
+        <p id="outputString"></p>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const inputString = document.getElementById("inputString").value;
+            const outputString = document.getElementById("outputString");
+            const sendButton = document.getElementById("sendButton");
+            sendButton.disabled = true;
+
+            // Printing speed and delay
+            const chunkSize = 1;
+            const delay = 50;
+
+            // Specify the server's IP address and port
+            const serverIP = '195.181.244.47'; // Replace with the actual server IP address
+            const serverPort = '3886'; // Replace with the actual server port
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", `http://${serverIP}:${serverPort}/append?string=${inputString}`, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const responseText = xhr.responseText;
+                    outputString.textContent = '';
+                    printCharactersWithDelay(responseText, outputString, chunkSize, delay);
+                    sendButton.disabled = false;
+                }
+            };
+
+            xhr.send();
+        }
+
+        function printCharactersWithDelay(text, element, chunkSize, delay) {
+            let index = 0;
+
+            function printChunk() {
+                if (index < text.length) {
+                    element.textContent += text.substring(index, index + chunkSize);
+                    index += chunkSize;
+                    setTimeout(printChunk, delay);
+                }
+            }
+
+            printChunk();
+        }
+    </script>
+</body>
+</html>

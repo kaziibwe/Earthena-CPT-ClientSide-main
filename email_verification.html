@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cognosphere Dynamics Ltd - Verify ID</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="LoginMain pt-20 m-auto mb-20 ">
+        <div class="form w-[90%] m-auto mt-2 md:w-[50%] lg:w-[90%] ">
+            <div style="height:200px; background-repeat:no-repeat; background-position:center; background-image: url(&quot;./sphere1.gif&quot;);"></div>
+            <h1 class="animate-bounce text-center headinglogin py-7">Verify your Email</h1>
+            <form action="login.php" method="POST">
+                <div class="fields">
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">Enter 6-Digit verification code.</label>
+                        <input type="email" placeholder="00 00 00"  name="e_mail" id="IBMid" class="text-center logininput placeholder-black-100">
+                    </div>
+                    <small class="small"></small>
+                    <div class="Allowlogin my-4">
+                        <button class="loginbtn  justify-between flex flex-row w-[100%] p-4 text-white " type="submit" value="Login" name="login" ><p>Verify</p><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" class="bx--btn__icon"><path d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"></path></svg></button>
+                    </div>
+                </div>
+            </form>
+                <div class="content-center forgot  justify-between">
+                    <p  >Didn't get code? </p>
+                    <a class="loginlink" href="#" class="text-blue">Resend code to Email.</a>
+                </div>
+           </div>
+            
+           <div class="login-canvas hidden lg:flex" style="background-image: url(&quot;../sign_img2.webp&quot;); background-repeat: no-repeat; background-position: center;height: 80vh;"></div> 
+    </div> 
+</body>
+</html>

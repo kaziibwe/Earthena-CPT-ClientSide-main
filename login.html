@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cognosphere Dynamics Ltd - Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="LoginNav p-3 px-4  border-e-grey ">
+            <div class="logininnernar w-[80%] m-auto">
+    
+            </div>
+            
+        </div>
+        <div class="LoginMain m-auto mb-20 ">
+            <div class="form w-[90%] m-auto mt-2 md:w-[50%] lg:w-[90%] ">
+                <div style="height:200px; background-repeat:no-repeat; background-position:center; background-image: url(&quot;./sphere1.gif&quot;);"></div>
+                <h1 class="animate-bounce text-center headinglogin py-7">Log into your sphere</h1>
+                <form action="login.php" method="POST">
+                    <div class="fields">
+                        <div class="outlineinput flex flex-col">
+                            <label for="IBMid" class="pt-4 pb-2 lable ">Sphere ID</label>
+                            <input type="email" placeholder="Your email is the Sphere ID"  name="e_mail" id="IBMid" class="logininput placeholder-black-100">
+                        </div>
+                        <div class="outlineinput flex flex-col">
+                            <label for="IBMid" class="pt-4 pb-2 lable ">Passkey</label>
+                            <input type="password" placeholder="Unlock your Sphere ..."  name="password" id="IBMid" class="logininput placeholder-black-100">
+                        </div>
+                        <small class="small"></small>
+                        <div class="Allowlogin my-4">
+                            <button class="loginbtn  justify-between flex flex-row w-[100%] p-4 text-white " type="submit" value="Login" name="login" ><p>Continue</p><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" class="bx--btn__icon"><path d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"></path></svg></button>
+                        </div>
+                        <div class="checkbox flex lfex-row">
+                            <input type="checkbox" name="" id="checkbox" class="checkboxinput w-4 py-1">
+                            <label for="checkbox" class="checkboxlabel px-2 my-2">Remember me</label>
+                            <svg class="m-2" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.5 11L8.5 6.5 6.5 6.5 6.5 7.5 7.5 7.5 7.5 11 6 11 6 12 10 12 10 11zM8 3.5c-.4 0-.8.3-.8.8S7.6 5 8 5c.4 0 .8-.3.8-.8S8.4 3.5 8 3.5z"></path><path d="M8,15c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S11.9,15,8,15z M8,2C4.7,2,2,4.7,2,8s2.7,6,6,6s6-2.7,6-6S11.3,2,8,2z"></path></svg>
+                        </div>
+                    </div>
+                </form>
+                    <div class="divdont my-4 pb-7 ">
+                        <p  class="dontlink ">Don't have a Sphere ID?</p>
+                        <form action="signup.html">
+                        <div class="my-4 dont">
+                            <button class=" justify-between flex flex-row w-[100%] p-4 dont " type="submit"><p>Create an Account</p><svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" class="bx--btn__icon"><path d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"></path></svg></button>
+                        </div>
+                        </form>
+                        
+                    </div>
+                    <div class="content-center forgot  justify-between">
+                        <p  >Forgot Sphere ID? </p>
+                        <a class="loginlink" href="#" class="text-blue">Contact Cognosphere help desk</a>
+                    </div>
+               </div>
+                
+               <div class="login-canvas hidden lg:flex" style="background-image: url(&quot;../sign_img2.webp&quot;); background-repeat: no-repeat; background-position: center;height: 80vh;"></div> 
+        </div> 
+    </section>
+</body>
+</html>

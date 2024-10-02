@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cognosphere Dynamics Ltd - Signup</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="LoginNav p-3 px-4  border-e-grey ">
+      
+        <div class="logininnernar w-[80%] m-auto">
+
+        </div>
+    </div>
+    <div class="SignupMain mb-20 lg:w-[90%] ">
+           <div class="bg-no-repeat bg-center login-canvas hidden lg:flex" style="background-image: url(&quot;./sphere1.gif&quot;);"></div> 
+           <div class="form w-[90%] m-auto mt-2 md:w-[50%] lg:w-[90%]">
+            <h1 class="text-left headingsignup py-3">Create a Sphere ID </h1>
+            <p class="flex">Already have a Sphere ID?&nbsp;<a href="index.html" style="color:blue;">Login to Spherical</a></p>
+
+            <form action="signup.php" method="POST">
+                <div class="hidder">
+                    <div class="accounter ">
+                       <p class="flex flex-row">
+                        <svg focusable="false" class="mx-2 my-0.5" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M23.7642 6.8593l1.2851-1.5315A13.976 13.976 0 0020.8672 2.887l-.6836 1.8776A11.9729 11.9729 0 0123.7642 6.8593zM27.81 14l1.9677-.4128A13.8888 13.8888 0 0028.14 9.0457L26.4087 10A12.52 12.52 0 0127.81 14zM20.1836 27.2354l.6836 1.8776a13.976 13.976 0 004.1821-2.4408l-1.2851-1.5315A11.9729 11.9729 0 0120.1836 27.2354zM26.4087 22L28.14 23a14.14 14.14 0 001.6382-4.5872L27.81 18.0659A12.1519 12.1519 0 0126.4087 22zM16 30V2a14 14 0 000 28z"></path><title></title></svg>
+                        User Account Information 
+                       </p> 
+                    </div> 
+                </div>
+                <div class="pb-4 fields">
+
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">E-mail</label>
+                        <input type="email"  placeholder="E-mail" name="e_mail" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                    <small class="small">Your email address will become your Sphere ID, which you'll use to log into spherical.cognospheredynamics.com.</small>
+
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">Country phone number</label>
+                        <input type="number"  name="phone_number" placeholder="+256 7xx xxxxxx" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                   <div class="name lg:grid grid-cols-2 gap-3">
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">First name</label>
+                        <input type="text"  name="first_name" placeholder="Surname" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">Last name</label>
+                        <input type="text"  name="last_name" placeholder="Given name" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                   </div>
+                   <div class="name lg:grid grid-cols-2 gap-3">
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">Password</label>
+                        <input type="text"  name="password" placeholder="Password" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">Verify Password</label>
+                        <input type="text"  name="password" placeholder="Verify password" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                   </div>
+                    <div class="name lg:grid grid-cols-2 gap-3">
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">Country</label>
+                        <input type="text"  name="country_region" placeholder="Country or Region" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                    <div class="outlineinput flex flex-col">
+                        <label for="IBMid" class="pt-4 pb-2 lable ">City or State</label>
+                        <input type="text"  name="city_state" placeholder="City or State" id="IBMid" class="logininput placeholder-black-100">
+                    </div>
+                   </div> 
+                </div>
+                <div class="divdont my-4 pb-7 hover:bg-blue">
+                    <div class="animate-bounce my-4 dont w-[50%]">
+                        <button class="  w-[100%] p-5 dont " type="submit" name="submit" ><p>Join the Sphere...</p></button>
+                    </div>
+                </div>
+            </form>
+              
+                <!-- <div class="forgot  justify-between">
+                    <p  >Forgot IBMid? </p>
+                    <a class="loginlink" href="#" class="text-blue">Contact the IBM help desk</a>
+                </div> -->
+           </div>
+            
+    </div> 
+</body>
+</html>
